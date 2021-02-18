@@ -1,0 +1,866 @@
+# menuconf.tab
+#
+# Menu configuration for Simutrans
+#
+# author: Markus Pristovsek
+#
+# changes for pak128: FrankP, VS, DirrrtyDirk
+#
+
+# With this file, each menu/tool/toolbar can be assigned a meaning.
+# There are four different kind of tools:
+#  general_tools: like query, remove, alter land, ...
+#  click tools: pause, fast forward, ...
+#  dialoge tools: open a dialoge like minimap, settings, finances, ...
+#  toolbar tools: open toolbars like slope tools, road tools, ...
+
+icon_width = 32
+icon_height = 32
+
+
+# FIRST SECTION: general tools
+# these tools have an icon, a cursor, and maybe a sound
+# each entry has the form: general_tool[i]=a,b,c,k
+# i is the tool number (as seen below)
+# a is the icon as number in menu: menu.GeneralTools.pak
+# b is the cursor as number in cursor: cursor.GeneralTools.pak
+# c is the sound on success
+# k is the key to toggle this
+# ommitting a parameter will set default values (i.e. no image, no sound, no default string)
+# These are the default definition.
+#
+# currently define values for i
+# WKZ_ABFRAGE =            0
+# WKZ_REMOVER =            1
+# WKZ_RAISE_LAND =         2
+# WKZ_LOWER_LAND =         3
+# WKZ_SETSLOPE =           4
+# WKZ_RESTORESLOPE =       5
+# WKZ_MARKER =             6
+# WKZ_CLEAR_RESERVATION =  7
+# WKZ_TRANSFORMER =        8
+# WKZ_ADD_CITY =           9
+# WKZ_CHANGE_CITY_SIZE =  10
+# WKZ_PLANT_TREE =        11
+# WKZ_FAHRPLAN_ADD =      12 // only for internal use
+# WKZ_FAHRPLAN_INS =      13 // only for internal use
+# WKZ_WEGEBAU =           14 // parameter either string with name of number for default way
+# WKZ_BRUECKENBAU =       15
+# WKZ_TUNNELBAU =         16
+# WKZ_WAYREMOVER =        17
+# WKZ_WAYOBJ =            18
+# WKZ_STATION =           19
+# WKZ_ROADSIGN =          20
+# WKZ_DEPOT =             21
+# WKZ_BUILD_HAUS =        22
+# WKZ_LAND_CHAIN =        23
+# WKZ_CITY_CHAIN =        24
+# WKZ_BUILD_FACTORY =     25
+# WKZ_LINK_FACTORY =      26
+# WKZ_HEADQUARTER =       27
+# WKZ_LOCK_GAME =         28
+# WKZ_ADD_CITYCAR =       29
+# WKZ_FOREST =            30
+# WKZ_STOP_MOVER =        31
+# WKZ_MAKE_STOP_PUBLIC =  32
+# WKZ_REMOVE_WAYOBJ=      33
+# WKZ_UNDERGROUND_PICK =  34
+# WKZ_BUY_HOUSE =         35
+# WKZ_CITYROAD =          36
+# WKZ_CHANGE_WATER_HEIGHT=38
+# WKZ_SET_CLIMATE =		  39
+#
+#
+general_tool[0]=0,0,9,a
+general_tool[1]=1,1,14,r
+general_tool[2]=2,2,11,u
+general_tool[3]=3,3,11,d
+# general tool 4 needs a parameter => icon defined in toolbar but no cursor yet
+general_tool[4]=,4,11,
+general_tool[5]=4,4,11,
+general_tool[6]=5,5,9,M
+general_tool[7]=6,6,,b
+general_tool[8]=7,7,11,g
+general_tool[9]=8,8,11,C
+# general tool 10 needs a parameter + icon & cursor depends on it => not defined here
+general_tool[11]=9,9,9,§
+# define the cursor for schedule tools
+general_tool[12]=,10,,
+general_tool[13]=,10,,
+general_tool[14]=,,11,
+general_tool[15]=,,12,
+general_tool[16]=,,9,
+general_tool[17]=,1,11,
+general_tool[18]=,,11,
+general_tool[19]=,,11,
+general_tool[20]=,,11,
+general_tool[21]=,,11,
+general_tool[22]=,12,11,
+general_tool[23]=,12,11,
+general_tool[24]=,12,11,
+general_tool[25]=,12,11,
+# we do not use general tool 23...25 directly => undefined icons
+general_tool[26]=10,11,,
+general_tool[27]=11,12,,h
+general_tool[28]=12,7,,
+general_tool[29]=17,,,
+general_tool[30]=13,9,,
+general_tool[31]=14,11,, 
+general_tool[32]=15,11,,
+general_tool[33]=18,1,11,
+general_tool[34]=,,11,
+general_tool[35]=16,13,11,K
+# cityroad (36) not set up here
+general_tool[40]=,11,,i
+
+
+# SECOND SECTION: simple tools
+# since these tools act immeadiately
+# they have only an icon assigned
+# each entry has the form: dialoge_tool[i]=a,k
+# i is the tool number (as seen below)
+# a is the icon as number in menu: menu.SimpleTools.pak
+# k is the key to toggle this
+#
+# WKZ_PAUSE =               0
+# WKZ_FASTFORWARD =         1
+# WKZ_SCREENSHOT =          2
+# WKZ_INCREASE_INDUSTRY =   3
+# WKZ_UNDO =                4
+# WKZ_SWITCH_PLAYER =       5
+# WKZ_STEP_YEAR =           6
+# WKZ_CHANGE_GAME_SPEED =   7
+# WKZ_ZOOM_IN =             8
+# WKZ_ZOOM_OUT =            9
+# WKZ_SHOW_COVERAGE =      10
+# WKZ_SHOW_NAMES =         11
+# WKZ_SHOW_GRID =          12
+# WKZ_SHOW_TREES =         13
+# WKZ_SHOW_HOUSES =        14
+# WKZ_SHOW_UNDERGROUND =   15
+# WKZ_ROTATE90 =           16
+# WKZ_QUIT =               17
+# WKZ_FILL_TREES =         18
+# WKZ_DAYNIGHT_LEVEL =     19
+# WKZ_VEHICLE_TOOLTIPS =   20
+# WKZ_TOOGLE_PAX =         21
+# WKZ_TOOGLE_PEDESTRIANS = 22
+# WKZ_TRAFFIC_LEVEL =      23
+# WKZ_CONVOI_TOOL =        24
+# WKZ_LINE_TOOL =          25
+# WKZ_DEPOT_TOOL =         26 // only for internal use
+# WKZ_PWDHASH_TOOL =       27 // only for internal use
+# WKZ_SET_PLAYER_TOOL =    28 // only for internal use
+# WKZ_TRAFFIC_LIGHT_TOOL = 29 // only for internal use
+# WKZ_CHANGE_CITY_TOOL =   30 // only for internal use
+# WKZ_RENAME_TOOL =        31 // only for internal use
+# WKZ_ADD_MESSAGE_TOOL =   32 // only for internal use
+# WKZ_TOGGLE_RESERVATION = 33
+# WKZ_VIEW_OWNER =         34
+
+simple_tool[0]=0,p
+simple_tool[1]=1,W
+simple_tool[2]=2,c
+simple_tool[3]=3,
+simple_tool[4]=4,z
+simple_tool[5]=5,P
+simple_tool[6]=6,
+# simple tool 7 needs a parameter
+simple_tool[8]=7,>
+simple_tool[9]=8,<
+# lots of icons still not drawn ...
+simple_tool[10]=,v
+simple_tool[11]=,!
+simple_tool[12]=9,#
+simple_tool[13]=,%
+simple_tool[14]=,"
+simple_tool[15]=13,U
+simple_tool[16]=11,R
+# Quit (17) removed due to people accidentally killing their games
+#simple_tool[17]=,X
+simple_tool[20]=,/
+simple_tool[33]=15,B
+simple_tool[34]=14,O
+simple_tool[37]=12,:
+
+# THIRD SECTION: dialoge tools
+# since these tools immeadiately open only a dialoge,
+# they have only an icon assigned
+# each entry has the form: dialoge_tool[i]=a,k
+# i is the tool number (as seen below)
+# a is the icon as number in menu: menu.DialogeTools.pak
+# k is the key to toggle this
+#
+# WKZ_HELP =              0
+# WKZ_OPTIONEN =          1
+# WKZ_MINIMAP =           2
+# WKZ_LINEOVERVIEW =      3
+# WKZ_MESSAGE =           4
+# WKZ_FINANCES =          5
+# WKZ_PLAYERS =           6
+# WKZ_DISPLAYOPTIONS =    7
+# WKZ_SOUND =             8
+# WKZ_LANGUAGE =          9
+# WKZ_PLAYERCOLOR =      10
+# WKZ_JUMP =             11
+# WKZ_LOAD =             12
+# WKZ_SAVE =             13
+# WKZ_LIST_HALT =        14
+# WKZ_LIST_CONVOI =      15
+# WKZ_LIST_TOWN =        16
+# WKZ_LIST_GOODS =       17
+# WKZ_LIST_FACTORY =     18
+# WKZ_LIST_CURIOSITY =   19
+# WKZ_EDIT_FACTORY =     20
+# WKZ_EDIT_ATTRACTION =  21
+# WKZ_EDIT_HOUSE =       22
+# WKZ_EDIT_TREE =        23
+# WKZ_ENLARGE_MAP =      24
+# WKZ_LIST_LABEL =       25
+# WKZ_CLIMATES =         26
+# WKZ_SETTINGS =         27
+# WKZ_GAMEINFO_NETWORK = 28
+# WKZ_DEPOT_LIST =       32
+# WKZ_AVAILABLE_VEHICLE_LIST = 33
+dialog_tool[0]=0,?
+dialog_tool[1]=1,Q
+dialog_tool[2]=2,m
+dialog_tool[3]=3,w
+dialog_tool[4]=4,B
+dialog_tool[5]=5,f
+dialog_tool[6]=6,k
+dialog_tool[7]=7,
+dialog_tool[8]=8,
+dialog_tool[9]=9,
+dialog_tool[10]=10,
+dialog_tool[11]=11,J
+dialog_tool[12]=12,^O
+dialog_tool[13]=13,^S
+dialog_tool[14]=14,H
+dialog_tool[15]=15,V
+dialog_tool[16]=16,T
+dialog_tool[17]=17,G
+dialog_tool[18]=18,F
+dialog_tool[19]=19,A
+dialog_tool[20]=21,
+dialog_tool[21]=22,
+dialog_tool[22]=23,&
+dialog_tool[23]=24,
+dialog_tool[24]=25,
+dialog_tool[25]=20,
+#dialog_tool[26]= 
+dialog_tool[27]=,@
+dialog_tool[28]=26,n
+dialog_tool[32]=27,
+dialog_tool[33]=28,
+dialog_tool[34]=S
+ 
+# FINAL SECTION: compose all tool bars
+# now the defintion of all tool bars
+# in general only toolbar[0] is needed,which is the main menu
+# all other toolbars are derived from it
+# Each entry is a[i],b,k,c,d
+# a[i] is either: general_tool[i], simple_tool[i], dialog_tool[i], toolbar[i], -, ways(waytype), signs(waytype), wayobj(waytype), stops(utype), depots(waytype)
+# b could be a different icon from the previous (if any) tool definition taken from menu.ToolbarTools.pak
+# k could be a different key binding
+# c is the default parameter
+# d is the helpfile name (only if a is toolbar[i])
+#
+# Entry without an icon will not be shown. Use - for seperator.
+#
+# following way types are defined (for nearly everything)
+# road_wt          =   1
+# track_wt         =   2
+# water_wt         =   3
+# monorail_wt      =   5
+# maglev_wt        =   6
+# tram_wt          =   7
+# narrowgauge_wt   =   8
+# air_wt           =  16
+# powerline_wt     = 128
+#
+# subtypes for ways(x,#)
+# flat = 0
+# elevated/runway = 1
+# tram = 7 (only for track)
+# special (eg. fence) = 255
+#
+# following building types are defined (for buildings(#))
+# unbekannt         =  0
+# attraction_city   =  1
+# attraction_land   =  2
+# denkmal           =  3
+# fabrik            =  4
+# rathaus           =  5
+# weitere           =  6
+# firmensitz        =  7
+# hafen             = 11
+# the following are in the form x,y with y= waytype (0 for none)
+# depot             = 33
+# generic_stop      = 34
+# generic_extension = 35
+#
+#
+# IMPORTANT: toolbar[2] must not be mentioned before toolbar[1]!
+# SPACES have a meaning here! Do not use spaces, if you did not intend so!
+#
+
+# toolbar[0] is always main menu
+toolbar[0][0]=dialog_tool[1]
+toolbar[0][1]=dialog_tool[2]
+toolbar[0][2]=dialog_tool[12]
+toolbar[0][3]=dialog_tool[13]
+toolbar[0][4]=general_tool[0]
+toolbar[0][5]=toolbar[1],0,,SLOPETOOLS,slopetools.txt
+toolbar[0][6]=toolbar[2],1,,RAILTOOLS,railtools.txt
+toolbar[0][7]=toolbar[3],2,,MONORAILTOOLS,monorailtools.txt
+toolbar[0][8]=toolbar[4],8,,MAGLEVTOOLS,maglevtools.txt
+toolbar[0][9]=toolbar[5],4,,NARROWGAUGETOOLS,special.txt
+toolbar[0][10]=toolbar[6],5,,ROADTOOLS,roadtools.txt
+toolbar[0][11]=toolbar[7],6,,SHIPTOOLS,shiptools.txt
+toolbar[0][12]=toolbar[8],7,,AIRTOOLS,airtools.txt
+toolbar[0][13]=toolbar[9],9,,SPECIALTOOLS,special.txt
+toolbar[0][14]=dialog_tool[34],163
+toolbar[0][15]=general_tool[44],167
+toolbar[0][16]=general_tool[1]
+toolbar[0][17]=toolbar[10],35,,EDITTOOLS,edittools.txt
+toolbar[0][18]=-
+toolbar[0][19]=dialog_tool[3]
+toolbar[0][20]=toolbar[11],10,,LISTTOOLS,list.txt
+toolbar[0][21]=dialog_tool[4]
+toolbar[0][22]=dialog_tool[5]
+toolbar[0][23]=-
+# sliced underground
+toolbar[0][24]=toolbar[12],57,,GENERALTOOLS,special.txt
+#
+toolbar[0][25]=-
+
+toolbar[0][26]=simple_tool[15],11,^U,K
+toolbar[0][27]=simple_tool[7],49,COMMA,-1
+toolbar[0][28]=simple_tool[0],,^p,
+toolbar[0][29]=simple_tool[7],48,.,+1
+toolbar[0][30]=simple_tool[1]
+toolbar[0][31]=simple_tool[2]
+toolbar[0][32]=dialog_tool[0]
+#
+toolbar[0][33]=-
+
+toolbar[0][34]=dialog_tool[28],118
+toolbar[0][35]=dialog_tool[27],119
+
+# slope tools
+toolbar[1][0]=general_tool[2]
+toolbar[1][1]=general_tool[3]
+toolbar[1][2]=general_tool[4],12,,36 #southslope
+toolbar[1][3]=general_tool[4],13,,72 #double southslope
+toolbar[1][4]=general_tool[4],14,,4 #northslope
+toolbar[1][5]=general_tool[4],15,,8 #double northslope
+toolbar[1][6]=general_tool[4],16,,12 #westslope
+toolbar[1][7]=general_tool[4],17,,24 #double westslope
+toolbar[1][8]=general_tool[4],18,,28 #eastslope
+toolbar[1][9]=general_tool[4],19,,56 #double eastslope
+toolbar[1][10]=general_tool[4],20,,82 #all up slope
+toolbar[1][11]=general_tool[4],21,,83 #all down slope
+toolbar[1][12]=general_tool[5]
+# now alter climate tools
+toolbar[1][13]=general_tool[39],38,,0
+toolbar[1][14]=general_tool[39],39,,1
+toolbar[1][15]=general_tool[39],40,,2
+toolbar[1][16]=general_tool[39],41,,3
+toolbar[1][17]=general_tool[39],42,,4
+toolbar[1][18]=general_tool[39],43,,5
+toolbar[1][19]=general_tool[39],44,,6
+toolbar[1][20]=general_tool[39],45,,7
+
+########## PART 1 WayTools #############
+
+# waytools 1 (Railway and tram)
+toolbar[2][0]=-,50,, #RailTool header
+toolbar[2][1]=toolbar[13],51,,Track
+toolbar[2][2]=toolbar[14],53,,Track object
+toolbar[2][3]=toolbar[15],54,,Signal
+toolbar[2][4]=toolbar[16],55,,Platform/Station/Depot
+
+# waytools 2 (Monorail)
+toolbar[3][0]=-,60,, #MonorailTool header
+toolbar[3][1]=toolbar[17],61,,Track
+toolbar[3][2]=toolbar[18],63,,Way object
+toolbar[3][3]=toolbar[19],64,,Signal
+toolbar[3][4]=toolbar[20],65,,Platform/Station/Depot
+
+# waytools 3 (Maglev)
+toolbar[4][0]=-,70,, #MaglevTool header
+toolbar[4][1]=toolbar[21],71,,Track
+toolbar[4][2]=toolbar[22],73,,Track object
+toolbar[4][3]=toolbar[23],74,,Signal
+toolbar[4][4]=toolbar[24],75,,Platform/Station/Depot
+
+# waytools 4 (Narrow gauge)
+toolbar[5][0]=-,80,, #MaglevTool header
+toolbar[5][1]=toolbar[25],81,,Track
+toolbar[5][2]=toolbar[26],83,,Track object
+toolbar[5][3]=toolbar[27],84,,Signal
+toolbar[5][4]=toolbar[28],85,,Platform/Station/Depot
+
+# waytools 5 (Road)
+toolbar[6][0]=-,90,, #RoadTool header
+toolbar[6][1]=toolbar[29],91,,Road
+toolbar[6][2]=toolbar[30],93,,Road object
+toolbar[6][3]=toolbar[31],94,,Sign/Signal
+toolbar[6][4]=toolbar[32],95,,Stop/Building/Depot
+
+# waytools 6 (Canal)
+toolbar[7][0]=-,100,, #MaglevTool header
+toolbar[7][1]=toolbar[33],101,,Canal
+toolbar[7][2]=toolbar[34],105,,Port/Shipyard
+
+# waytools 7 (Air)
+toolbar[8][0]=-,110,, #MaglevTool header
+toolbar[8][1]=toolbar[35],111,,Taxiway/Runway
+toolbar[8][2]=toolbar[36],114,,Sign
+toolbar[8][3]=toolbar[37],115,,Apron/Airport
+
+
+# specialtools
+toolbar[9][0]=-,123,, #Station Bldg Icon 1
+toolbar[9][1]=-,136,, #Station Bldg Icon 2
+toolbar[9][2]=buildings(35,0)
+toolbar[9][3]=scripts(buildings(35,0))
+toolbar[9][4]=-,123,, #Station Bldg Icon 1
+toolbar[9][5]=-,130,, #Railway Icon 1
+toolbar[9][6]=ways(2,255)
+toolbar[9][7]=scripts(ways(2,255))
+toolbar[9][8]=simple_tool[5]
+toolbar[9][9]=general_tool[9]
+toolbar[9][10]=general_tool[11]
+toolbar[9][11]=ways(128,0)
+toolbar[9][12]=scripts(ways(128,0))
+toolbar[9][13]=bridges(128)
+toolbar[9][14]=scripts(bridges(128))
+toolbar[9][15]=tunnels(128)
+toolbar[9][16]=scripts(tunnels(128))
+toolbar[9][17]=general_tool[17],31,,128 #Remove Way
+toolbar[9][18]=general_tool[8]
+toolbar[9][19]=general_tool[6]
+toolbar[9][20]=general_tool[31]
+toolbar[9][21]=general_tool[32]
+toolbar[9][22]=general_tool[35],166
+toolbar[9][23]=general_tool[40],164
+toolbar[9][24]=general_tool[41],165
+toolbar[9][25]=general_tool[14],,,128
+
+# editor tools
+toolbar[10][0]=general_tool[10],32,,+100
+toolbar[10][1]=general_tool[10],33,,-100
+toolbar[10][2]=general_tool[9]
+toolbar[10][3]=general_tool[36],34,,
+toolbar[10][4]=ways(3,255)
+toolbar[10][5]=simple_tool[3]
+toolbar[10][6]=dialog_tool[20]
+toolbar[10][7]=general_tool[26]
+toolbar[10][8]=dialog_tool[21]
+toolbar[10][9]=dialog_tool[22]
+toolbar[10][10]=dialog_tool[23]
+toolbar[10][11]=general_tool[30]
+toolbar[10][12]=general_tool[29],162
+toolbar[10][13]=simple_tool[6]
+toolbar[10][14]=dialog_tool[24]
+toolbar[10][15]=general_tool[28]
+# fill and draw bassins (images would be 30 and 31)
+toolbar[10][16]=general_tool[38],36,,+1
+toolbar[10][17]=general_tool[38],37,,-1
+
+# new terraforming
+toolbar[10][18]=general_tool[39],38,,0
+toolbar[10][19]=general_tool[39],39,,1
+toolbar[10][20]=general_tool[39],40,,2
+toolbar[10][21]=general_tool[39],41,,3
+toolbar[10][22]=general_tool[39],42,,4
+toolbar[10][23]=general_tool[39],43,,5
+toolbar[10][24]=general_tool[39],44,,6
+toolbar[10][25]=general_tool[39],45,,7
+
+# list tools
+toolbar[11][0]=dialog_tool[14]
+toolbar[11][1]=dialog_tool[3]
+toolbar[11][2]=dialog_tool[15]
+toolbar[11][3]=dialog_tool[16]
+toolbar[11][4]=dialog_tool[17]
+toolbar[11][5]=dialog_tool[18]
+toolbar[11][6]=dialog_tool[19]
+toolbar[11][7]=dialog_tool[25],,^M
+toolbar[11][8]=dialog_tool[6]
+toolbar[11][9]=dialog_tool[32]
+toolbar[11][10]=dialog_tool[33]
+
+# general tools... map control
+toolbar[12][0]=simple_tool[8]
+toolbar[12][1]=simple_tool[9]
+toolbar[12][2]=simple_tool[12]
+toolbar[12][3]=simple_tool[16]
+toolbar[12][4]=simple_tool[34]
+toolbar[12][5]=simple_tool[15],11,^U,K
+toolbar[12][6]=simple_tool[15],46,+,I
+toolbar[12][7]=simple_tool[15],47,-,D
+toolbar[12][8]=simple_tool[15]
+toolbar[12][9]=general_tool[7]
+toolbar[12][10]=simple_tool[33]
+toolbar[12][11]=dialog_tool[11],117
+toolbar[12][12]=simple_tool[19],147,),+
+toolbar[12][13]=simple_tool[19],148,(,-
+
+
+########## PART 2 Railway and Tram WayTools #############
+
+toolbar[13][0]=-,120,, #Railway Icon 1
+toolbar[13][1]=-,130,, #Railway Icon 1
+toolbar[13][2]=general_tool[17],23,,2 #Remove Way
+toolbar[13][3]=ways(2,0)
+toolbar[13][4]=scripts(ways(2,0))
+toolbar[13][5]=ways(2,1)
+toolbar[13][6]=scripts(ways(2,1))
+toolbar[13][7]=-,121,, #Tramway Icon 1
+toolbar[13][8]=-,131,, #Tramway Icon 1
+toolbar[13][9]=ways(2,7)
+toolbar[13][10]=scripts(ways(2,7))
+toolbar[13][11]=ways(7,0)
+toolbar[13][12]=scripts(ways(7,0))
+toolbar[13][13]=ways(7,1)
+toolbar[13][14]=scripts(ways(7,1))
+toolbar[13][15]=ways(7,7)
+toolbar[13][16]=scripts(ways(7,7))
+toolbar[13][17]=general_tool[14],,,2
+toolbar[13][18]=general_tool[14],,,7
+toolbar[13][19]=-,122,, #Rail & Tram Icon
+toolbar[13][20]=-,132,, #Brdg & Tnl Icon
+toolbar[13][21]=bridges(2)
+toolbar[13][22]=scripts(bridges(2))
+toolbar[13][23]=bridges(7)
+toolbar[13][24]=scripts(bridges(7))
+toolbar[13][25]=tunnels(2)
+toolbar[13][26]=scripts(tunnels(2))
+toolbar[13][27]=tunnels(7)
+toolbar[13][28]=scripts(tunnels(7))
+
+# wayobjtools (Waytype 2 and 7)
+toolbar[14][0]=-,122,, #Rail & Tram Icon
+toolbar[14][1]=-,133,, #WayObject Icon
+toolbar[14][2]=general_tool[33],22,,2 #Remove Wayobj
+toolbar[14][3]=wayobjs(2)
+toolbar[14][4]=scripts(wayobjs(2))
+toolbar[14][5]=wayobjs(7)
+toolbar[14][6]=scripts(wayobjs(7))
+toolbar[14][7]=general_tool[18],,,2
+
+# signaltools (Waytype 2 and 7)
+toolbar[15][0]=-,122,, #Rail & Tram Icon
+toolbar[15][1]=-,134,, #Signal Icon
+toolbar[15][2]=signs(2)
+toolbar[15][3]=scripts(signs(2))
+toolbar[15][4]=signs(7)
+toolbar[15][5]=scripts(signs(7))
+
+# station tools (Waytype 2 and 7)
+toolbar[16][0]=-,122,, #Rail & Tram Icon
+toolbar[16][1]=-,135,, #Platform Icon
+toolbar[16][2]=buildings(34,2)
+toolbar[16][3]=scripts(buildings(34,2))
+toolbar[16][4]=buildings(34,7)
+toolbar[16][5]=scripts(buildings(34,7))
+toolbar[16][6]=-,123,, #Station Bldg Icon 1
+toolbar[16][7]=-,136,, #Station Bldg Icon 2
+toolbar[16][8]=buildings(35,0)
+toolbar[16][9]=scripts(buildings(35,0))
+toolbar[16][10]=buildings(35,2)
+toolbar[16][11]=scripts(buildings(35,2))
+toolbar[16][12]=buildings(35,7)
+toolbar[16][13]=scripts(buildings(35,7))
+toolbar[16][14]=-,122,, #Rail & Tram Icon
+toolbar[16][15]=-,137,, #Depot Icon
+toolbar[16][16]=buildings(33,2)
+toolbar[16][17]=scripts(buildings(33,2))
+toolbar[16][18]=buildings(33,7)
+toolbar[16][19]=scripts(buildings(33,7))
+
+########## PART 3 Monorail WayTools #############
+
+toolbar[17][0]=-,124,, #Railway Icon 1
+toolbar[17][1]=-,130,, #Railway Icon 1
+toolbar[17][2]=general_tool[17],24,,5 #Remove Way
+toolbar[17][3]=ways(5,0)
+toolbar[17][4]=scripts(ways(5,0))
+toolbar[17][5]=ways(5,1)
+toolbar[17][6]=scripts(ways(5,1))
+toolbar[17][7]=general_tool[14],,,5
+toolbar[17][8]=-,124,, #Rail & Tram Icon
+toolbar[17][9]=-,132,, #Brdg & Tnl Icon
+toolbar[17][10]=bridges(5)
+toolbar[17][11]=scripts(bridges(5))
+toolbar[17][12]=tunnels(5)
+toolbar[17][13]=scripts(tunnels(5))
+
+# wayobjtools (Waytype 5)
+toolbar[18][0]=-,124,, #Rail & Tram Icon
+toolbar[18][1]=-,133,, #WayObject Icon
+toolbar[18][2]=general_tool[33],22,,5 #Remove Wayobj
+toolbar[18][3]=wayobjs(5)
+toolbar[18][4]=scripts(wayobjs(5))
+toolbar[18][5]=general_tool[18],,,5
+
+# signaltools (Waytype 5)
+toolbar[19][0]=-,124,, #Rail & Tram Icon
+toolbar[19][1]=-,134,, #Signal Icon
+toolbar[19][2]=signs(5)
+toolbar[19][3]=scripts(signs(5))
+
+# station tools (Waytype 5)
+toolbar[20][0]=-,124,, #Rail & Tram Icon
+toolbar[20][1]=-,135,, #Platform Icon
+toolbar[20][2]=buildings(34,5)
+toolbar[20][3]=scripts(buildings(34,5))
+toolbar[20][4]=-,123,, #Station Bldg Icon 1
+toolbar[20][5]=-,136,, #Station Bldg Icon 2
+toolbar[20][6]=buildings(35,5)
+toolbar[20][7]=scripts(buildings(35,5))
+toolbar[20][8]=-,124,, #Rail & Tram Icon
+toolbar[20][9]=-,137,, #Depot Icon
+toolbar[20][10]=buildings(33,5)
+toolbar[20][11]=scripts(buildings(33,5))
+
+########## PART 4 Maglev WayTools #############
+
+toolbar[21][0]=-,125,, #Railway Icon 1
+toolbar[21][1]=-,130,, #Railway Icon 1
+toolbar[21][2]=general_tool[17],25,,6 #Remove Way
+toolbar[21][3]=ways(6,0)
+toolbar[21][4]=scripts(ways(6,0))
+toolbar[21][5]=ways(6,1)
+toolbar[21][6]=scripts(ways(6,1))
+toolbar[21][7]=general_tool[14],,,6
+toolbar[21][8]=-,125,, #Rail & Tram Icon
+toolbar[21][9]=-,132,, #Brdg & Tnl Icon
+toolbar[21][10]=bridges(6)
+toolbar[21][11]=scripts(bridges(6))
+toolbar[21][12]=tunnels(6)
+toolbar[21][13]=scripts(tunnels(6))
+
+# wayobjtools (Waytype 6)
+toolbar[22][0]=-,125,, #Rail & Tram Icon
+toolbar[22][1]=-,133,, #WayObject Icon
+toolbar[22][2]=general_tool[33],22,,6 #Remove Wayobj
+toolbar[22][3]=wayobjs(6)
+toolbar[22][4]=scripts(wayobjs(6))
+toolbar[22][5]=general_tool[18],,,6
+
+# signaltools (Waytype 6)
+toolbar[23][0]=-,125,, #Rail & Tram Icon
+toolbar[23][1]=-,134,, #Signal Icon
+toolbar[23][2]=signs(6)
+toolbar[23][3]=scripts(signs(6))
+
+# station tools (Waytype 6)
+toolbar[24][0]=-,125,, #Rail & Tram Icon
+toolbar[24][1]=-,135,, #Platform Icon
+toolbar[24][2]=buildings(34,6)
+toolbar[24][3]=scripts(buildings(34,6))
+toolbar[24][4]=-,123,, #Station Bldg Icon 1
+toolbar[24][5]=-,136,, #Station Bldg Icon 2
+toolbar[24][6]=buildings(35,6)
+toolbar[24][7]=scripts(buildings(35,6))
+toolbar[24][8]=-,125,, #Rail & Tram Icon
+toolbar[24][9]=-,137,, #Depot Icon
+toolbar[24][10]=buildings(33,6)
+toolbar[24][11]=scripts(buildings(33,6))
+
+###################################################
+########## PART 5 Narrow gauge WayTools #############
+
+toolbar[25][0]=-,126,, #Railway Icon 1
+toolbar[25][1]=-,130,, #Railway Icon 1
+toolbar[25][2]=general_tool[17],26,,8 #Remove Way
+toolbar[25][3]=ways(8,0)
+toolbar[25][4]=scripts(ways(8,0))
+toolbar[25][5]=ways(8,1)
+toolbar[25][6]=scripts(ways(8,1))
+# toolbar[13][5]=-,126,, #Tramway Icon 1
+# toolbar[13][6]=-,131,, #Tramway Icon 1
+# toolbar[25][7]=ways(8,7)
+toolbar[25][8]=scripts(ways(8,7))
+# toolbar[25][8]=ways(9,0)
+# toolbar[25][9]=ways(9,1)
+# toolbar[25][10]=ways(9,7)
+toolbar[25][9]=general_tool[14],,,8
+toolbar[25][10]=-,126,, #Rail & Tram Icon
+toolbar[25][11]=-,132,, #Brdg & Tnl Icon
+toolbar[25][12]=bridges(8)
+toolbar[25][13]=scripts(bridges(8))
+toolbar[25][14]=tunnels(8)
+toolbar[25][15]=scripts(tunnels(8))
+
+# wayobjtools (Waytype 8)
+toolbar[26][0]=-,126,, #Rail & Tram Icon
+toolbar[26][1]=-,133,, #WayObject Icon
+toolbar[26][2]=general_tool[33],22,,8 #Remove Wayobj
+toolbar[26][3]=wayobjs(8)
+toolbar[26][4]=scripts(wayobjs(8))
+toolbar[26][5]=general_tool[18],,,8
+
+# signaltools (Waytype 8)
+toolbar[27][0]=-,126,, #Rail & Tram Icon
+toolbar[27][1]=-,134,, #Signal Icon
+toolbar[27][2]=signs(8)
+toolbar[27][3]=scripts(signs(8))
+
+# station tools (Waytype 8)
+toolbar[28][0]=-,126,, #Rail & Tram Icon
+toolbar[28][1]=-,135,, #Platform Icon
+toolbar[28][2]=buildings(34,8)
+toolbar[28][3]=scripts(buildings(34,8))
+toolbar[28][4]=buildings(34,9)
+toolbar[82][5]=scripts(buildings(34,9))
+toolbar[28][6]=-,123,, #Station Bldg Icon 1
+toolbar[28][7]=-,136,, #Station Bldg Icon 2
+toolbar[28][8]=buildings(35,8)
+toolbar[28][9]=scripts(buildings(35,8))
+toolbar[28][10]=-,126,, #Rail & Tram Icon
+toolbar[28][11]=-,137,, #Depot Icon
+toolbar[28][12]=buildings(33,8)
+toolbar[28][13]=scripts(buildings(33,8))
+
+###################################################
+########## PART 6 Road WayTools #############
+
+toolbar[29][0]=-,127,, #Railway Icon 1
+toolbar[29][1]=-,138,, #Railway Icon 1
+toolbar[29][2]=general_tool[17],27,,1 #Remove Way
+toolbar[29][3]=ways(1,0)
+toolbar[29][4]=scripts(ways(1,0))
+toolbar[29][5]=ways(1,1)
+toolbar[29][6]=scripts(ways(1,1))
+toolbar[29][7]=general_tool[14],,,1
+toolbar[29][8]=-,127,, #Rail & Tram Icon
+toolbar[29][9]=-,132,, #Brdg & Tnl Icon
+toolbar[29][10]=bridges(1)
+toolbar[29][11]=scripts(bridges(1))
+toolbar[29][12]=tunnels(1)
+toolbar[29][13]=scripts(tunnels(1))
+
+# wayobjtools (Waytype 1)
+toolbar[30][0]=-,127,, #Rail & Tram Icon
+toolbar[30][1]=-,133,, #WayObject Icon
+toolbar[30][2]=general_tool[33],22,,1 #Remove Wayobj
+toolbar[30][3]=wayobjs(1)
+toolbar[30][4]=scripts(wayobjs(1))
+
+# signaltools (Waytype 1)
+toolbar[31][0]=-,127,, #Rail & Tram Icon
+toolbar[31][1]=-,139,, #Signal Icon
+toolbar[31][2]=signs(1)
+toolbar[31][3]=scripts(signs(1))
+
+# station tools (Waytype 1)
+toolbar[32][0]=-,127,, #Rail & Tram Icon
+toolbar[32][1]=-,140,, #Platform Icon
+toolbar[32][2]=buildings(34,1)
+toolbar[32][3]=scripts(buildings(34,1))
+toolbar[32][4]=-,127,, #Rail & Tram Icon
+toolbar[32][5]=-,136,, #Station Bldg Icon 2
+toolbar[32][6]=buildings(35,1)
+toolbar[32][7]=scripts(buildings(35,1))
+toolbar[32][8]=-,127,, #Rail & Tram Icon
+toolbar[32][9]=-,137,, #Depot Icon
+toolbar[32][10]=buildings(33,1)
+toolbar[32][11]=scripts(buildings(33,1))
+
+###################################################
+########## PART 7 Ship WayTools #############
+
+toolbar[33][0]=-,128,, #Railway Icon 1
+toolbar[33][1]=-,146,, #Canl
+toolbar[33][2]=general_tool[17],28,,3 #Remove Way
+toolbar[33][3]=ways(3,0)
+toolbar[33][4]=scripts(ways(3,0))
+toolbar[33][5]=ways(3,1)
+toolbar[33][6]=scripts(ways(3,1))
+toolbar[33][7]=general_tool[14],,,3
+toolbar[33][8]=-,128,, #Rail & Tram Icon
+toolbar[33][9]=-,133,, #WayObject Icon
+toolbar[33][10]=wayobjs(3)
+toolbar[33][11]=scripts(wayobjs(3))
+toolbar[33][12]=-,128,, #Rail & Tram Icon
+toolbar[33][13]=-,132,, #Brdg & Tnl Icon
+toolbar[33][14]=bridges(3)
+toolbar[33][15]=scripts(bridges(3))
+toolbar[33][16]=tunnels(3)
+toolbar[33][17]=scripts(tunnels(3))
+toolbar[33][18]=-,128,, #Rail & Tram Icon
+toolbar[33][19]=-,139,, #Signal Icon
+toolbar[33][20]=signs(3)
+toolbar[33][21]=scripts(signs(3))
+
+# station tools (Waytype 3)
+toolbar[34][0]=-,128,, #Rail & Tram Icon
+toolbar[34][1]=-,143,, #Port Icon
+toolbar[34][2]=buildings(34,3)
+toolbar[34][3]=scripts(buildings(34,3))
+toolbar[34][4]=buildings(11,3)
+toolbar[34][5]=scripts(buildings(11,3))
+toolbar[34][6]=buildings(35,3)
+toolbar[34][7]=scripts(buildings(35,3))
+toolbar[34][8]=buildings(36,3)
+toolbar[34][9]=scripts(buildings(36,3))
+toolbar[34][10]=-,128,, #Rail & Tram Icon
+toolbar[34][11]=-,144,, #Depot Icon
+toolbar[34][12]=buildings(33,3)
+toolbar[34][13]=scripts(buildings(33,3))
+
+###################################################
+########## PART 8 Air WayTools #############
+
+toolbar[35][0]=-,129,, #Railway Icon 1
+toolbar[35][1]=-,141,, #Railway Icon 1
+toolbar[35][2]=general_tool[17],29,,16 #Remove Way
+toolbar[35][3]=ways(16,0)
+toolbar[35][4]=scripts(ways(16,0))
+toolbar[35][5]=ways(16,7)
+toolbar[35][6]=scripts(ways(16,7))
+toolbar[35][7]=ways(16,255)
+toolbar[35][8]=scripts(ways(16,255))
+toolbar[35][9]=-,129,, #Railway Icon 1
+toolbar[35][10]=-,142,, #Railway Icon 1
+toolbar[35][11]=ways(16,1)
+toolbar[35][12]=scripts(ways(16,1))
+toolbar[35][13]=general_tool[14],,,16
+toolbar[35][14]=-,129,, #Air Way Icon 1
+toolbar[35][15]=-,142,, #Railway Icon 1
+toolbar[35][16]=bridges(16)
+toolbar[35][17]=scripts(bridges(16))
+toolbar[35][18]=tunnels(16)
+toolbar[35][19]=scripts(tunnels(16))
+toolbar[35][20]=-,129,, #Railway Icon 1
+toolbar[35][21]=-,133,, #wayobj
+toolbar[35][22]=general_tool[33],22,,16 #Remove Wayobj
+toolbar[35][23]=wayobjs(16)
+toolbar[35][24]=scripts(wayobjs(16))
+
+# signaltools (Waytype 1)
+toolbar[36][0]=-,129,, #Rail & Tram Icon
+toolbar[36][1]=-,139,, #Signal Icon
+toolbar[36][2]=signs(16)
+toolbar[36][5]=scripts(signs(16))
+
+# station tools (Waytype 1)
+toolbar[37][0]=-,129,, #Rail & Tram Icon
+toolbar[37][1]=-,140,, #Platform Icon
+toolbar[37][2]=buildings(34,16)
+toolbar[37][3]=scripts(buildings(34,16))
+toolbar[37][4]=buildings(35,16)
+toolbar[37][5]=scripts(buildings(35,16))
+toolbar[37][6]=-,129,, #Rail & Tram Icon
+toolbar[37][7]=-,137,, #Depot Icon
+toolbar[37][8]=buildings(33,16)
+toolbar[37][9]=scripts(buildings(33,16))
+
+###################################################
+
+# EOF
