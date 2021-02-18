@@ -7,7 +7,7 @@
 1. pakフォルダの名前を導入するpakの名前に合わせ、そのフォルダを実行ファイルのあるフォルダにコピペする
 
 # 使用条件
-ahakuoku simutrans addon license original version 2.1以上(ASAL O2.1)を適用します。詳しくはhttps://sites.google.com/site/ahakuoku/home/download/licenseをご参照ください。
+ahakuoku simutrans addon license original version 2.1以上(ASAL O2.1)を適用します。詳しくは https://sites.google.com/site/ahakuoku/home/download/license をご参照ください。
 
 ## ASAL O2.1全文
 著作権は作者が保有しています。  
