@@ -323,7 +323,7 @@ toolbar[0][13]=toolbar[9],9,,SPECIALTOOLS,special.txt
 toolbar[0][14]=dialog_tool[34],163
 toolbar[0][15]=general_tool[44],167
 toolbar[0][16]=general_tool[1]
-toolbar[0][17]=toolbar[10],35,,EDITTOOLS,edittools.txt
+toolbar[0][17]=toolbar[10],35,,MAPEDITTOOLS,edittools.txt
 toolbar[0][18]=-
 toolbar[0][19]=dialog_tool[3]
 toolbar[0][20]=toolbar[11],10,,LISTTOOLS,list.txt
@@ -447,7 +447,7 @@ toolbar[9][21]=general_tool[32]
 toolbar[9][22]=general_tool[35],166
 toolbar[9][23]=general_tool[40],164
 toolbar[9][24]=general_tool[41],165
-toolbar[9][25]=general_tool[14],,,128
+toolbar[9][25]=general_tool[14],,l,128
 
 # editor tools
 toolbar[10][0]=general_tool[10],32,,+100
@@ -529,7 +529,7 @@ toolbar[13][13]=ways(7,1)
 toolbar[13][14]=scripts(ways(7,1))
 toolbar[13][15]=ways(7,7)
 toolbar[13][16]=scripts(ways(7,7))
-toolbar[13][17]=general_tool[14],,,2
+toolbar[13][17]=general_tool[14],,t,2
 toolbar[13][18]=general_tool[14],,,7
 toolbar[13][19]=-,122,, #Rail & Tram Icon
 toolbar[13][20]=-,132,, #Brdg & Tnl Icon
@@ -550,7 +550,7 @@ toolbar[14][3]=wayobjs(2)
 toolbar[14][4]=scripts(wayobjs(2))
 toolbar[14][5]=wayobjs(7)
 toolbar[14][6]=scripts(wayobjs(7))
-toolbar[14][7]=general_tool[18],,,2
+toolbar[14][7]=general_tool[18],,e,2
 
 # signaltools (Waytype 2 and 7)
 toolbar[15][0]=-,122,, #Rail & Tram Icon
@@ -682,20 +682,14 @@ toolbar[25][3]=ways(8,0)
 toolbar[25][4]=scripts(ways(8,0))
 toolbar[25][5]=ways(8,1)
 toolbar[25][6]=scripts(ways(8,1))
-# toolbar[13][5]=-,126,, #Tramway Icon 1
-# toolbar[13][6]=-,131,, #Tramway Icon 1
-# toolbar[25][7]=ways(8,7)
-toolbar[25][8]=scripts(ways(8,7))
-# toolbar[25][8]=ways(9,0)
-# toolbar[25][9]=ways(9,1)
-# toolbar[25][10]=ways(9,7)
-toolbar[25][9]=general_tool[14],,,8
-toolbar[25][10]=-,126,, #Rail & Tram Icon
-toolbar[25][11]=-,132,, #Brdg & Tnl Icon
-toolbar[25][12]=bridges(8)
-toolbar[25][13]=scripts(bridges(8))
-toolbar[25][14]=tunnels(8)
-toolbar[25][15]=scripts(tunnels(8))
+toolbar[25][7]=scripts(ways(8,7))
+toolbar[25][8]=general_tool[14],,,8
+toolbar[25][9]=-,126,, #Rail & Tram Icon
+toolbar[25][10]=-,132,, #Brdg & Tnl Icon
+toolbar[25][11]=bridges(8)
+toolbar[25][12]=scripts(bridges(8))
+toolbar[25][13]=tunnels(8)
+toolbar[25][14]=scripts(tunnels(8))
 
 # wayobjtools (Waytype 8)
 toolbar[26][0]=-,126,, #Rail & Tram Icon
@@ -737,7 +731,7 @@ toolbar[29][3]=ways(1,0)
 toolbar[29][4]=scripts(ways(1,0))
 toolbar[29][5]=ways(1,1)
 toolbar[29][6]=scripts(ways(1,1))
-toolbar[29][7]=general_tool[14],,,1
+toolbar[29][7]=general_tool[14],,s,1
 toolbar[29][8]=-,127,, #Rail & Tram Icon
 toolbar[29][9]=-,132,, #Brdg & Tnl Icon
 toolbar[29][10]=bridges(1)
@@ -847,7 +841,7 @@ toolbar[35][24]=scripts(wayobjs(16))
 toolbar[36][0]=-,129,, #Rail & Tram Icon
 toolbar[36][1]=-,139,, #Signal Icon
 toolbar[36][2]=signs(16)
-toolbar[36][5]=scripts(signs(16))
+toolbar[36][3]=scripts(signs(16))
 
 # station tools (Waytype 1)
 toolbar[37][0]=-,129,, #Rail & Tram Icon

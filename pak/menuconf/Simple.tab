@@ -327,43 +327,29 @@ toolbar[0][17]=toolbar[12],9,,SPECIALTOOLS,special.txt
 toolbar[0][18]=dialog_tool[34],163
 toolbar[0][19]=general_tool[44],167
 toolbar[0][20]=general_tool[1]
-toolbar[0][21]=toolbar[13],35,,EDITTOOLS,edittools.txt
+toolbar[0][21]=toolbar[13],35,,MAPEDITTOOLS,edittools.txt
 toolbar[0][22]=-
 toolbar[0][23]=dialog_tool[3]
 toolbar[0][24]=toolbar[14],10,,LISTTOOLS,list.txt
 toolbar[0][25]=dialog_tool[4]
 toolbar[0][26]=dialog_tool[5]
 toolbar[0][27]=-
-
-# general tools... map control
-toolbar[0][28]=simple_tool[8]
-toolbar[0][29]=simple_tool[9]
-toolbar[0][30]=simple_tool[12]
-toolbar[0][31]=simple_tool[16]
-toolbar[0][32]=simple_tool[34]
-toolbar[0][33]=simple_tool[15],11,^U,K
-toolbar[0][34]=simple_tool[15],46,+,I
-toolbar[0][35]=simple_tool[15],47,-,D
-toolbar[0][36]=simple_tool[15]
-toolbar[0][37]=general_tool[7]
-toolbar[0][38]=simple_tool[33]
-toolbar[0][39]=dialog_tool[11],117
-toolbar[0][40]=simple_tool[19],147,),+
-toolbar[0][41]=simple_tool[19],148,(,-
 #
-toolbar[0][42]=-
+toolbar[0][28]=toolbar[15],57,,GENERALTOOLS,special.txt
 #
-toolbar[0][43]=simple_tool[7],49,COMMA,-1
-toolbar[0][44]=simple_tool[0],,^p,
-toolbar[0][45]=simple_tool[7],48,.,+1
-toolbar[0][46]=simple_tool[1]
-toolbar[0][47]=simple_tool[2]
-toolbar[0][48]=dialog_tool[0]
+toolbar[0][29]=-
 #
-toolbar[0][49]=-
+toolbar[0][30]=simple_tool[7],49,COMMA,-1
+toolbar[0][31]=simple_tool[0],,^p,
+toolbar[0][32]=simple_tool[7],48,.,+1
+toolbar[0][33]=simple_tool[1]
+toolbar[0][34]=simple_tool[2]
+toolbar[0][35]=dialog_tool[0]
 #
-toolbar[0][50]=dialog_tool[28],118
-toolbar[0][51]=dialog_tool[27],119
+toolbar[0][36]=-
+#
+toolbar[0][37]=dialog_tool[28],118
+toolbar[0][38]=dialog_tool[27],119
 
 # slope tools
 toolbar[1][0]=general_tool[2]
@@ -409,7 +395,7 @@ toolbar[2][13]=ways(7,1)
 toolbar[2][14]=scripts(ways(7,1))
 toolbar[2][15]=ways(7,7)
 toolbar[2][16]=scripts(ways(7,7))
-toolbar[2][17]=general_tool[14],,,2
+toolbar[2][17]=general_tool[14],,t,2
 toolbar[2][18]=general_tool[14],,,7
 toolbar[2][19]=-,122,, #Rail & Tram Icon
 toolbar[2][20]=-,132,, #Brdg & Tnl Icon
@@ -430,7 +416,7 @@ toolbar[3][3]=wayobjs(2)
 toolbar[3][4]=scripts(wayobjs(2))
 toolbar[3][5]=wayobjs(7)
 toolbar[3][6]=scripts(wayobjs(7))
-toolbar[3][7]=general_tool[18],,,2
+toolbar[3][7]=general_tool[18],,e,2
 
 # signaltools (Waytype 2 and 7)
 toolbar[4][0]=-,122,, #Rail & Tram Icon
@@ -609,7 +595,7 @@ toolbar[9][3]=ways(1,0)
 toolbar[9][4]=scripts(ways(1,0))
 toolbar[9][5]=ways(1,1)
 toolbar[9][6]=scripts(ways(1,1))
-toolbar[9][7]=general_tool[14],,,1
+toolbar[9][7]=general_tool[14],,s,1
 toolbar[9][8]=-,127,, #Rail & Tram Icon
 toolbar[9][9]=-,132,, #Brdg & Tnl Icon
 toolbar[9][10]=bridges(1)
@@ -804,6 +790,21 @@ toolbar[14][8]=dialog_tool[6]
 toolbar[14][9]=dialog_tool[32]
 toolbar[14][10]=dialog_tool[33]
 
+# general tools... map control
+toolbar[15][0]=simple_tool[8]
+toolbar[15][1]=simple_tool[9]
+toolbar[15][2]=simple_tool[12]
+toolbar[15][3]=simple_tool[16]
+toolbar[15][4]=simple_tool[34]
+toolbar[15][5]=simple_tool[15],11,^U,K
+toolbar[15][6]=simple_tool[15],46,+,I
+toolbar[15][7]=simple_tool[15],47,-,D
+toolbar[15][8]=simple_tool[15]
+toolbar[15][9]=general_tool[7]
+toolbar[15][10]=simple_tool[33]
+toolbar[15][11]=dialog_tool[11],117
+toolbar[15][12]=simple_tool[19],147,),+
+toolbar[15][13]=simple_tool[19],148,(,-
 
 ###################################################
 
