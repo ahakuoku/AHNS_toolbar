@@ -287,4 +287,16 @@ Image[165]=> menu_buttons_AHNS.1.11 #駅舎統合
 Image[166]=> menu_buttons_AHNS.1.9 #市内建築物購入ツール
 #r0025追加分
 Image[167]=> menu_buttons_AHNS.7.12 #スクリプトジェネレーター
+#r0036追加分
+Image[168]=> menu_buttons_AHNS.6.13 #鉄道ツール
+Image[169]=> menu_buttons_AHNS.4.7 #ライバル会社一覧
+Image[170]=> menu_buttons_AHNS.8.6 #人口を1000人増やす
+Image[171]=> menu_buttons_AHNS.8.7 #人口を10000人増やす
+Image[172]=> menu_buttons_AHNS.8.8 #注意画面1
+Image[173]=> menu_buttons_AHNS.8.9 #注意画面2
+Image[174]=> menu_buttons_AHNS.8.10 #注意画面3
+Image[175]=> menu_buttons_AHNS.8.11 #注意画面4
+Image[176]=> menu_buttons_AHNS.2.4 #産業チェーン・発電所を増やす
+Image[177]=> menu_buttons_AHNS.2.7 #1年進める
+Image[178]=> menu_buttons_AHNS.0.7 #プレイヤー変更の禁止
 --
