@@ -330,24 +330,25 @@ toolbar[0][20]=dialog_tool[3]
 toolbar[0][21]=toolbar[12],10,,LISTTOOLS,list.txt
 toolbar[0][22]=dialog_tool[4]
 toolbar[0][23]=dialog_tool[5]
-toolbar[0][24]=-
+toolbar[0][24]=dialog_tool[6]
+toolbar[0][25]=-
 # sliced underground
-toolbar[0][25]=toolbar[13],57,,GENERALTOOLS,special.txt
+toolbar[0][26]=toolbar[13],57,,GENERALTOOLS,special.txt
 #
-toolbar[0][26]=-
+toolbar[0][27]=-
 
-toolbar[0][27]=simple_tool[15],11,^U,K
-toolbar[0][28]=simple_tool[7],49,COMMA,-1
-toolbar[0][29]=simple_tool[0],,^p,
-toolbar[0][30]=simple_tool[7],48,.,+1
-toolbar[0][31]=simple_tool[1]
-toolbar[0][32]=simple_tool[2]
-toolbar[0][33]=dialog_tool[0]
+toolbar[0][28]=simple_tool[15],11,^U,K
+toolbar[0][29]=simple_tool[15],46,+,I
+toolbar[0][30]=simple_tool[15],47,-,D
+toolbar[0][31]=simple_tool[0],,^p,
+toolbar[0][32]=simple_tool[1]
+toolbar[0][33]=simple_tool[2]
+toolbar[0][34]=dialog_tool[0]
 #
-toolbar[0][34]=-
+toolbar[0][35]=-
 
-toolbar[0][35]=dialog_tool[28],118
-toolbar[0][36]=dialog_tool[27],119
+toolbar[0][36]=dialog_tool[28],118
+toolbar[0][37]=dialog_tool[27],119
 
 # slope tools
 toolbar[1][0]=general_tool[2]
@@ -459,7 +460,6 @@ toolbar[10][25]=general_tool[40],164
 toolbar[10][26]=general_tool[41],165
 toolbar[10][27]=general_tool[14],,l,128
 
-
 # editor tools
 toolbar[11][0]=general_tool[10],32,,+100
 toolbar[11][1]=general_tool[10],170,,+1000
@@ -522,6 +522,10 @@ toolbar[13][10]=simple_tool[33]
 toolbar[13][11]=dialog_tool[11],117
 toolbar[13][12]=simple_tool[19],147,),+
 toolbar[13][13]=simple_tool[19],148,(,-
+toolbar[13][14]=simple_tool[7],49,COMMA,-1
+toolbar[13][15]=simple_tool[0],,^p,
+toolbar[13][16]=simple_tool[7],48,.,+1
+toolbar[13][17]=simple_tool[1]
 
 
 ########## PART 2 Railway WayTools #############
@@ -894,7 +898,7 @@ toolbar[43][0]=-,172,, #Warning Icon 1
 toolbar[43][1]=-,173,, #Warning Icon 2
 toolbar[43][2]=-,174,, #Warning Icon 3
 toolbar[43][3]=-,175,, #Warning Icon 4
-toolbar[43][4]=general_tool[26]
+toolbar[43][4]=simple_tool[3]
 
 #warning(simple_6)
 toolbar[44][0]=-,172,, #Warning Icon 1
