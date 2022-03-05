@@ -513,49 +513,50 @@ toolbar[7][35]=scripts(buildings(33,6))
 
 toolbar[8][0]=-,121,, #Tramway Icon 1
 toolbar[8][1]=-,130,, #Tramway Icon 1
-toolbar[8][2]=ways(2,7)
-toolbar[8][3]=scripts(ways(2,7))
-toolbar[8][4]=ways(7,0)
-toolbar[8][5]=scripts(ways(7,0))
-toolbar[8][6]=ways(7,1)
-toolbar[8][7]=scripts(ways(7,1))
-toolbar[8][8]=ways(7,7)
-toolbar[8][9]=scripts(ways(7,7))
-toolbar[8][10]=general_tool[14],,t,2
-toolbar[8][11]=-,121,, #Tram Icon
-toolbar[8][12]=-,132,, #Brdg & Tnl Icon
-toolbar[8][13]=bridges(7)
-toolbar[8][14]=scripts(bridges(7))
-toolbar[8][15]=tunnels(7)
-toolbar[8][16]=scripts(tunnels(7))
+toolbar[8][2]=general_tool[17],23,,2 #Remove Way
+toolbar[8][3]=ways(2,7)
+toolbar[8][4]=scripts(ways(2,7))
+toolbar[8][5]=ways(7,0)
+toolbar[8][6]=scripts(ways(7,0))
+toolbar[8][7]=ways(7,1)
+toolbar[8][8]=scripts(ways(7,1))
+toolbar[8][9]=ways(7,7)
+toolbar[8][10]=scripts(ways(7,7))
+toolbar[8][11]=general_tool[14],,t,2
+toolbar[8][12]=-,121,, #Tram Icon
+toolbar[8][13]=-,132,, #Brdg & Tnl Icon
+toolbar[8][14]=bridges(7)
+toolbar[8][15]=scripts(bridges(7))
+toolbar[8][16]=tunnels(7)
+toolbar[8][17]=scripts(tunnels(7))
 
 # wayobjtools (Waytype 7)
-toolbar[8][17]=-,121,, #Tram Icon
-toolbar[8][18]=-,133,, #WayObject Icon
-toolbar[8][19]=general_tool[33],22,,2 #Remove Wayobj
-toolbar[8][20]=wayobjs(7)
-toolbar[8][21]=scripts(wayobjs(7))
-toolbar[8][22]=general_tool[18],,e,2
+toolbar[8][18]=-,121,, #Tram Icon
+toolbar[8][19]=-,133,, #WayObject Icon
+toolbar[8][20]=general_tool[33],22,,2 #Remove Wayobj
+toolbar[8][21]=wayobjs(7)
+toolbar[8][22]=scripts(wayobjs(7))
+toolbar[8][23]=general_tool[18],,e,2
 
 # signaltools (Waytype 7)
-toolbar[8][23]=-,121,, #Tram Icon
-toolbar[8][24]=-,134,, #Signal Icon
-toolbar[8][25]=signs(7)
-toolbar[8][26]=scripts(signs(7))
+toolbar[8][24]=-,121,, #Tram Icon
+toolbar[8][25]=-,134,, #Signal Icon
+toolbar[8][26]=signs(7)
+toolbar[8][27]=scripts(signs(7))
 
 # station tools (Waytype 7)
-toolbar[8][27]=-,121,, #Tram Icon
-toolbar[8][28]=-,135,, #Platform Icon
-toolbar[8][29]=buildings(34,7)
-toolbar[8][30]=scripts(buildings(34,7))
-toolbar[8][31]=-,123,, #Station Bldg Icon 1
-toolbar[8][32]=-,136,, #Station Bldg Icon 2
-toolbar[8][33]=buildings(35,7)
-toolbar[8][34]=scripts(buildings(35,7))
-toolbar[8][35]=-,122,, #Rail & Tram Icon
-toolbar[8][36]=-,137,, #Depot Icon
-toolbar[8][37]=buildings(33,7)
-toolbar[8][38]=scripts(buildings(33,7))
+toolbar[8][28]=-,121,, #Tram Icon
+toolbar[8][29]=-,135,, #Platform Icon
+toolbar[8][30]=buildings(34,7)
+toolbar[8][31]=scripts(buildings(34,7))
+toolbar[8][32]=-,123,, #Station Bldg Icon 1
+toolbar[8][33]=-,136,, #Station Bldg Icon 2
+toolbar[8][34]=buildings(35,7)
+toolbar[8][35]=scripts(buildings(35,7))
+toolbar[8][36]=-,122,, #Rail & Tram Icon
+toolbar[8][37]=-,137,, #Depot Icon
+toolbar[8][38]=buildings(33,7)
+toolbar[8][39]=scripts(buildings(33,7))
 
 ########## PART 6 Narrow gauge WayTools #############
 
