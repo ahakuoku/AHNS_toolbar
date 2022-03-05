@@ -339,7 +339,7 @@ toolbar[0][29]=toolbar[19],10,,LISTTOOLS,list.txt
 toolbar[0][30]=dialog_tool[6]
 toolbar[0][31]=-
 # sliced underground
-toolbar[0][32]=toolbar[20],57,,GENERALTOOLS,special.txt
+toolbar[0][32]=toolbar[20],179,,GENERALTOOLS,special.txt
 #
 toolbar[0][33]=-
 
