@@ -5,6 +5,7 @@
 1. AHNSツールバーをダウンロードする
 1. zipを解凍する
 1. pakフォルダの名前を導入するpakの名前に合わせ、そのフォルダを実行ファイルのあるフォルダにコピペする
+1. (本体バージョンがOTRPv30以前の場合のみ)(pakset)/menuconf.tabを(pakset)/menuconf/forOTRPv29.tabに置き換える
 
 # 使用条件
 ahakuoku simutrans addon license original version 2.1以上(ASAL O2.1)を適用します。詳しくは https://sites.google.com/site/ahakuoku/home/download/license をご参照ください。
@@ -20,7 +21,7 @@ ahakuoku simutrans addon license original version 2.1以上(ASAL O2.1)を適用�
 
 # 内容
 AHNS仕様のツールバーpak
-menuconf 2種類(デフォルト版とクリック数を少なくしたい人向けのシンプル版)
+menuconf 2種類(OTRP最新版向けとOTRPv30系以前向け)
 
 ## menuconfの変更方法
 (pakset)/menuconfにある任意のtabファイルで(pakset)/configにあるmenuconf.tabを置き換えてください。
@@ -36,7 +37,22 @@ menuconf 2種類(デフォルト版とクリック数を少なくしたい人向
 - KPI_menubars(かみやん様制作)( https://simutrans.sakura.ne.jp/portal/articles/kpi_menubars_versions3 )
 
 # 更新履歴
-現在の最新バージョンは、Version 1.0.0です。
+現在の最新バージョンは、Version 1.2.0です。
+
+## Version 1.2.0(2022/03/25)
+- インフラ系ツールにて、クリック回数を削減しました。
+  - これに伴い、通常版とシンプル版を統合しました。
+- 鉄道ツールと市電ツールを分離しました。
+- スクリプトツールなど一部ツールについて、「いろいろツール」などへの隔離をしました。
+- 「いろいろツール」のアイコンを変更しました。
+- 常時表示の上部ツールバーに、ライバル会社一覧を追加しました。
+- 船舶架線の撤去ツールを追加しました。
+- 鉄道駅舎のうち、建物系をすべて特殊建築物に分離しました。
+- 人口増加ツールに、+1000人と+10000人を追加しました。
+- マップに重大な影響を及ぼすおそれのある操作に対して、警告画面を表示するようにしました。
+- 線路占有解除ツールと線路占有確認ツールを統合しました。
+- KUTAとOTRP v32で追加・変更された一部機能に対応しました。
+  - これに伴い、OTRP v30系までの本体で使用するにはmenuconf.tabをmenuconf/forOTRPv29.tabで置き換える必要があります。
 
 ## version 1.1.0(2020/02/27)
 - 複数のショートカットキーを追加しました。
