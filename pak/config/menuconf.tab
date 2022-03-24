@@ -830,19 +830,18 @@ toolbar[20][5]=simple_tool[15],11,^U,K
 toolbar[20][6]=simple_tool[15],46,+,I
 toolbar[20][7]=simple_tool[15],47,-,D
 toolbar[20][8]=simple_tool[15]
-toolbar[20][9]=general_tool[7]
-toolbar[20][10]=simple_tool[33]
-toolbar[20][11]=dialog_tool[11],117
-toolbar[20][12]=simple_tool[19],147,),+
-toolbar[20][13]=simple_tool[19],148,(,-
-toolbar[20][14]=simple_tool[7],49,COMMA,-1
-toolbar[20][15]=simple_tool[0],,^p,
-toolbar[20][16]=simple_tool[7],48,.,+1
-toolbar[20][17]=simple_tool[1]
-toolbar[20][18]=dialog_tool[0]
-toolbar[20][19]=dialog_tool[27],119
-toolbar[20][20]=dialog_tool[34],163
-toolbar[20][21]=general_tool[44],167
+toolbar[20][9]=general_tool[7],182
+toolbar[20][10]=dialog_tool[11],117
+toolbar[20][11]=simple_tool[19],147,),+
+toolbar[20][12]=simple_tool[19],148,(,-
+toolbar[20][13]=simple_tool[7],49,COMMA,-1
+toolbar[20][14]=simple_tool[0],,^p,
+toolbar[20][15]=simple_tool[7],48,.,+1
+toolbar[20][16]=simple_tool[1]
+toolbar[20][17]=dialog_tool[0]
+toolbar[20][18]=dialog_tool[27],119
+toolbar[20][19]=dialog_tool[34],163
+toolbar[20][20]=general_tool[44],167
 
 
 ###################################################
