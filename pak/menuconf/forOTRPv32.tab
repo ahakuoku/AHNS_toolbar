@@ -328,22 +328,21 @@ toolbar[0][18]=toolbar[12],94,,Sign/Signal
 toolbar[0][19]=toolbar[13],95,,Stop/Building/Depot
 toolbar[0][20]=-,100,, #ShipTool header
 toolbar[0][21]=toolbar[14],101,,Canal
-toolbar[0][22]=toolbar[15],105,,Port/Shipyard
-toolbar[0][23]=toolbar[16],7,,AIRTOOLS,airtools.txt
-toolbar[0][24]=toolbar[17],9,,SPECIALTOOLS,special.txt
-toolbar[0][25]=general_tool[1]
-toolbar[0][26]=toolbar[18],35,,MAPEDITTOOLS,edittools.txt
-toolbar[0][27]=-
-toolbar[0][28]=dialog_tool[3]
-toolbar[0][29]=toolbar[19],10,,LISTTOOLS,list.txt
-toolbar[0][30]=dialog_tool[6]
-toolbar[0][31]=simple_tool[41],180
-toolbar[0][32]=-
+toolbar[0][22]=toolbar[15],104,,Hakozumi
+toolbar[0][23]=toolbar[16],105,,Port/Shipyard
+toolbar[0][24]=toolbar[17],7,,AIRTOOLS,airtools.txt
+toolbar[0][25]=toolbar[18],9,,SPECIALTOOLS,special.txt
+toolbar[0][26]=general_tool[1]
+toolbar[0][27]=toolbar[19],35,,MAPEDITTOOLS,edittools.txt
+toolbar[0][28]=-
+toolbar[0][29]=dialog_tool[3]
+toolbar[0][30]=toolbar[20],10,,LISTTOOLS,list.txt
+toolbar[0][31]=dialog_tool[6]
+toolbar[0][32]=simple_tool[41],180
+toolbar[0][33]=-
 # sliced underground
-toolbar[0][33]=toolbar[20],179,,GENERALTOOLS,special.txt
+toolbar[0][34]=toolbar[21],179,,GENERALTOOLS,special.txt
 #
-toolbar[0][34]=-
-
 toolbar[0][35]=simple_tool[15],11,^U,K
 toolbar[0][36]=simple_tool[15],46,+,I
 toolbar[0][37]=simple_tool[15],47,-,D
@@ -680,195 +679,198 @@ toolbar[14][20]=-,139,, #Signal Icon
 toolbar[14][21]=signs(3)
 toolbar[14][22]=scripts(signs(3))
 
-# station tools (Waytype 3)
+# Hakozumi tools (Waytype 3)
 toolbar[15][0]=-,128,, #Rail & Tram Icon
 toolbar[15][1]=-,143,, #Port Icon
 toolbar[15][2]=buildings(34,3)
 toolbar[15][3]=scripts(buildings(34,3))
-toolbar[15][4]=buildings(11,3)
-toolbar[15][5]=scripts(buildings(11,3))
-toolbar[15][6]=buildings(35,3)
-toolbar[15][7]=scripts(buildings(35,3))
-toolbar[15][8]=buildings(36,3)
-toolbar[15][9]=scripts(buildings(36,3))
-toolbar[15][10]=-,128,, #Rail & Tram Icon
-toolbar[15][11]=-,144,, #Depot Icon
-toolbar[15][12]=buildings(33,3)
-toolbar[15][13]=scripts(buildings(33,3))
+
+# station tools (Waytype 3)
+toolbar[16][0]=-,128,, #Rail & Tram Icon
+toolbar[16][1]=-,143,, #Port Icon
+toolbar[16][2]=buildings(11,3)
+toolbar[16][3]=scripts(buildings(11,3))
+toolbar[16][4]=buildings(35,3)
+toolbar[16][5]=scripts(buildings(35,3))
+toolbar[16][6]=buildings(36,3)
+toolbar[16][7]=scripts(buildings(36,3))toolbar[15][10]=-,128,, #Rail & Tram Icon
+toolbar[16][8]=-,144,, #Depot Icon
+toolbar[16][9]=buildings(33,3)
+toolbar[16][10]=scripts(buildings(33,3))
 
 ###################################################
 ########## PART 9 Air WayTools #############
 
-toolbar[16][0]=-,129,, #Railway Icon 1
-toolbar[16][1]=-,141,, #Railway Icon 1
-toolbar[16][2]=general_tool[17],29,,16 #Remove Way
-toolbar[16][3]=ways(16,0)
-toolbar[16][4]=scripts(ways(16,0))
-toolbar[16][5]=ways(16,7)
-toolbar[16][6]=scripts(ways(16,7))
-toolbar[16][7]=ways(16,255)
-toolbar[16][8]=scripts(ways(16,255))
-toolbar[16][9]=-,129,, #Railway Icon 1
-toolbar[16][10]=-,142,, #Railway Icon 1
-toolbar[16][11]=ways(16,1)
-toolbar[16][12]=scripts(ways(16,1))
-toolbar[16][13]=general_tool[14],,,16
-toolbar[16][14]=-,129,, #Air Way Icon 1
-toolbar[16][15]=-,142,, #Railway Icon 1
-toolbar[16][16]=bridges(16)
-toolbar[16][17]=scripts(bridges(16))
-toolbar[16][18]=tunnels(16)
-toolbar[16][19]=scripts(tunnels(16))
-toolbar[16][20]=-,129,, #Railway Icon 1
-toolbar[16][21]=-,133,, #wayobj
-toolbar[16][22]=general_tool[33],22,,16 #Remove Wayobj
-toolbar[16][23]=wayobjs(16)
-toolbar[16][24]=scripts(wayobjs(16))
+toolbar[17][0]=-,129,, #Railway Icon 1
+toolbar[17][1]=-,141,, #Railway Icon 1
+toolbar[17][2]=general_tool[17],29,,16 #Remove Way
+toolbar[17][3]=ways(16,0)
+toolbar[17][4]=scripts(ways(16,0))
+toolbar[17][5]=ways(16,7)
+toolbar[17][6]=scripts(ways(16,7))
+toolbar[17][7]=ways(16,255)
+toolbar[17][8]=scripts(ways(16,255))
+toolbar[17][9]=-,129,, #Railway Icon 1
+toolbar[17][10]=-,142,, #Railway Icon 1
+toolbar[17][11]=ways(16,1)
+toolbar[17][12]=scripts(ways(16,1))
+toolbar[17][13]=general_tool[14],,,16
+toolbar[17][14]=-,129,, #Air Way Icon 1
+toolbar[17][15]=-,142,, #Railway Icon 1
+toolbar[17][16]=bridges(16)
+toolbar[17][17]=scripts(bridges(16))
+toolbar[17][18]=tunnels(16)
+toolbar[17][19]=scripts(tunnels(16))
+toolbar[17][20]=-,129,, #Railway Icon 1
+toolbar[17][21]=-,133,, #wayobj
+toolbar[17][22]=general_tool[33],22,,16 #Remove Wayobj
+toolbar[17][23]=wayobjs(16)
+toolbar[17][24]=scripts(wayobjs(16))
 
 # signaltools (Waytype 1)
-toolbar[16][25]=-,129,, #Rail & Tram Icon
-toolbar[16][26]=-,139,, #Signal Icon
-toolbar[16][27]=signs(16)
-toolbar[16][28]=scripts(signs(16))
+toolbar[17][25]=-,129,, #Rail & Tram Icon
+toolbar[17][26]=-,139,, #Signal Icon
+toolbar[17][27]=signs(16)
+toolbar[17][28]=scripts(signs(16))
 
 # station tools (Waytype 1)
-toolbar[16][29]=-,129,, #Rail & Tram Icon
-toolbar[16][30]=-,140,, #Platform Icon
-toolbar[16][31]=buildings(34,16)
-toolbar[16][32]=scripts(buildings(34,16))
-toolbar[16][33]=buildings(35,16)
-toolbar[16][34]=scripts(buildings(35,16))
-toolbar[16][35]=-,129,, #Rail & Tram Icon
-toolbar[16][36]=-,137,, #Depot Icon
-toolbar[16][37]=buildings(33,16)
-toolbar[16][38]=scripts(buildings(33,16))
+toolbar[17][29]=-,129,, #Rail & Tram Icon
+toolbar[17][30]=-,140,, #Platform Icon
+toolbar[17][31]=buildings(34,16)
+toolbar[17][32]=scripts(buildings(34,16))
+toolbar[17][33]=buildings(35,16)
+toolbar[17][34]=scripts(buildings(35,16))
+toolbar[17][35]=-,129,, #Rail & Tram Icon
+toolbar[17][36]=-,137,, #Depot Icon
+toolbar[17][37]=buildings(33,16)
+toolbar[17][38]=scripts(buildings(33,16))
 
 # specialtools
-toolbar[17][0]=-,123,, #Station Bldg Icon 1
-toolbar[17][1]=-,136,, #Station Bldg Icon 2
-toolbar[17][2]=buildings(35,0)
-toolbar[17][3]=scripts(buildings(35,0))
-toolbar[17][4]=buildings(35,2)
-toolbar[17][5]=scripts(buildings(35,2))
-toolbar[17][6]=-,123,, #Station Bldg Icon 1
-toolbar[17][7]=-,130,, #Railway Icon 1
-toolbar[17][8]=ways(2,255)
-toolbar[17][9]=scripts(ways(2,255))
-toolbar[17][10]=simple_tool[5]
-toolbar[17][11]=general_tool[9]
-toolbar[17][12]=general_tool[11]
-toolbar[17][13]=ways(128,0)
-toolbar[17][14]=scripts(ways(128,0))
-toolbar[17][15]=bridges(128)
-toolbar[17][16]=scripts(bridges(128))
-toolbar[17][17]=tunnels(128)
-toolbar[17][18]=scripts(tunnels(128))
-toolbar[17][19]=general_tool[17],31,,128 #Remove Way
-toolbar[17][20]=general_tool[8]
-toolbar[17][21]=general_tool[6]
-toolbar[17][22]=general_tool[31]
-toolbar[17][23]=general_tool[32]
-toolbar[17][24]=general_tool[35],166
-toolbar[17][25]=general_tool[40],164
-toolbar[17][26]=general_tool[41],165
-toolbar[17][27]=general_tool[14],,l,128
+toolbar[18][0]=-,123,, #Station Bldg Icon 1
+toolbar[18][1]=-,136,, #Station Bldg Icon 2
+toolbar[18][2]=buildings(35,0)
+toolbar[18][3]=scripts(buildings(35,0))
+toolbar[18][4]=buildings(35,2)
+toolbar[18][5]=scripts(buildings(35,2))
+toolbar[18][6]=-,123,, #Station Bldg Icon 1
+toolbar[18][7]=-,130,, #Railway Icon 1
+toolbar[18][8]=ways(2,255)
+toolbar[18][9]=scripts(ways(2,255))
+toolbar[18][10]=simple_tool[5]
+toolbar[18][11]=general_tool[9]
+toolbar[18][12]=general_tool[11]
+toolbar[18][13]=ways(128,0)
+toolbar[18][14]=scripts(ways(128,0))
+toolbar[18][15]=bridges(128)
+toolbar[18][16]=scripts(bridges(128))
+toolbar[18][17]=tunnels(128)
+toolbar[18][18]=scripts(tunnels(128))
+toolbar[18][19]=general_tool[17],31,,128 #Remove Way
+toolbar[18][20]=general_tool[8]
+toolbar[18][21]=general_tool[6]
+toolbar[18][22]=general_tool[31]
+toolbar[18][23]=general_tool[32]
+toolbar[18][24]=general_tool[35],166
+toolbar[18][25]=general_tool[40],164
+toolbar[18][26]=general_tool[41],165
+toolbar[18][27]=general_tool[14],,l,128
 
 # editor tools
-toolbar[18][0]=general_tool[10],32,,+100
-toolbar[18][1]=general_tool[10],170,,+1000
-toolbar[18][2]=general_tool[10],171,,+10000
-toolbar[18][3]=general_tool[10],33,,-100
-toolbar[18][4]=general_tool[9]
-toolbar[18][5]=general_tool[36],34,,
-toolbar[18][6]=ways(3,255)
-toolbar[18][7]=scripts(ways(3,255))
-toolbar[18][8]=toolbar[21],176,,Caution
-toolbar[18][9]=dialog_tool[20]
-toolbar[18][10]=general_tool[26]
-toolbar[18][11]=dialog_tool[21]
-toolbar[18][12]=dialog_tool[22]
-toolbar[18][13]=dialog_tool[23]
-toolbar[18][14]=general_tool[30]
-toolbar[18][15]=general_tool[29],162
-toolbar[18][16]=toolbar[22],177,,Caution
-toolbar[18][17]=dialog_tool[24]
-toolbar[18][18]=toolbar[23],178,,Caution
+toolbar[19][0]=general_tool[10],32,,+100
+toolbar[19][1]=general_tool[10],170,,+1000
+toolbar[19][2]=general_tool[10],171,,+10000
+toolbar[19][3]=general_tool[10],33,,-100
+toolbar[19][4]=general_tool[9]
+toolbar[19][5]=general_tool[36],34,,
+toolbar[19][6]=ways(3,255)
+toolbar[19][7]=scripts(ways(3,255))
+toolbar[19][8]=toolbar[22],176,,Caution
+toolbar[19][9]=dialog_tool[20]
+toolbar[19][10]=general_tool[26]
+toolbar[19][11]=dialog_tool[21]
+toolbar[19][12]=dialog_tool[22]
+toolbar[19][13]=dialog_tool[23]
+toolbar[19][14]=general_tool[30]
+toolbar[19][15]=general_tool[29],162
+toolbar[19][16]=toolbar[23],177,,Caution
+toolbar[19][17]=dialog_tool[24]
+toolbar[19][18]=toolbar[24],178,,Caution
 # fill and draw bassins (images would be 30 and 31)
-toolbar[18][19]=general_tool[38],36,,+1
-toolbar[18][20]=general_tool[38],37,,-1
+toolbar[19][19]=general_tool[38],36,,+1
+toolbar[19][20]=general_tool[38],37,,-1
 
 # new terraforming
-toolbar[18][21]=general_tool[39],38,,0
-toolbar[18][22]=general_tool[39],39,,1
-toolbar[18][23]=general_tool[39],40,,2
-toolbar[18][24]=general_tool[39],41,,3
-toolbar[18][25]=general_tool[39],42,,4
-toolbar[18][26]=general_tool[39],43,,5
-toolbar[18][27]=general_tool[39],44,,6
-toolbar[18][28]=general_tool[39],45,,7
+toolbar[19][21]=general_tool[39],38,,0
+toolbar[19][22]=general_tool[39],39,,1
+toolbar[19][23]=general_tool[39],40,,2
+toolbar[19][24]=general_tool[39],41,,3
+toolbar[19][25]=general_tool[39],42,,4
+toolbar[19][26]=general_tool[39],43,,5
+toolbar[19][27]=general_tool[39],44,,6
+toolbar[19][28]=general_tool[39],45,,7
 
 # list tools
-toolbar[19][0]=dialog_tool[14]
-toolbar[19][1]=dialog_tool[3]
-toolbar[19][2]=dialog_tool[15]
-toolbar[19][3]=dialog_tool[16]
-toolbar[19][4]=dialog_tool[17]
-toolbar[19][5]=dialog_tool[18]
-toolbar[19][6]=dialog_tool[19]
-toolbar[19][7]=dialog_tool[25],,^M
-toolbar[19][8]=dialog_tool[6]
-toolbar[19][9]=dialog_tool[32]
-toolbar[19][10]=dialog_tool[33]
-toolbar[19][11]=dialog_tool[4]
-toolbar[19][12]=dialog_tool[5]
+toolbar[20][0]=dialog_tool[14]
+toolbar[20][1]=dialog_tool[3]
+toolbar[20][2]=dialog_tool[15]
+toolbar[20][3]=dialog_tool[16]
+toolbar[20][4]=dialog_tool[17]
+toolbar[20][5]=dialog_tool[18]
+toolbar[20][6]=dialog_tool[19]
+toolbar[20][7]=dialog_tool[25],,^M
+toolbar[20][8]=dialog_tool[6]
+toolbar[20][9]=dialog_tool[32]
+toolbar[20][10]=dialog_tool[33]
+toolbar[20][11]=dialog_tool[4]
+toolbar[20][12]=dialog_tool[5]
 
 # general tools... map control
-toolbar[20][0]=simple_tool[8]
-toolbar[20][1]=simple_tool[9]
-toolbar[20][2]=simple_tool[12]
-toolbar[20][3]=simple_tool[16]
-toolbar[20][4]=simple_tool[34]
-toolbar[20][5]=simple_tool[15],11,^U,K
-toolbar[20][6]=simple_tool[15],46,+,I
-toolbar[20][7]=simple_tool[15],47,-,D
-toolbar[20][8]=simple_tool[15]
-toolbar[20][9]=general_tool[7],182
-toolbar[20][10]=dialog_tool[11],117
-toolbar[20][11]=simple_tool[19],147,),+
-toolbar[20][12]=simple_tool[19],148,(,-
-toolbar[20][13]=simple_tool[7],49,COMMA,-1
-toolbar[20][14]=simple_tool[0],,^p,
-toolbar[20][15]=simple_tool[7],48,.,+1
-toolbar[20][16]=simple_tool[1]
-toolbar[20][17]=dialog_tool[0]
-toolbar[20][18]=dialog_tool[27],119
-toolbar[20][19]=dialog_tool[34],163
-toolbar[20][20]=general_tool[47],167
+toolbar[21][0]=simple_tool[8]
+toolbar[21][1]=simple_tool[9]
+toolbar[21][2]=simple_tool[12]
+toolbar[21][3]=simple_tool[16]
+toolbar[21][4]=simple_tool[34]
+toolbar[21][5]=simple_tool[15],11,^U,K
+toolbar[21][6]=simple_tool[15],46,+,I
+toolbar[21][7]=simple_tool[15],47,-,D
+toolbar[21][8]=simple_tool[15]
+toolbar[21][9]=general_tool[7],182
+toolbar[21][10]=dialog_tool[11],117
+toolbar[21][11]=simple_tool[19],147,),+
+toolbar[21][12]=simple_tool[19],148,(,-
+toolbar[21][13]=simple_tool[7],49,COMMA,-1
+toolbar[21][14]=simple_tool[0],,^p,
+toolbar[21][15]=simple_tool[7],48,.,+1
+toolbar[21][16]=simple_tool[1]
+toolbar[21][17]=dialog_tool[0]
+toolbar[21][18]=dialog_tool[27],119
+toolbar[21][19]=dialog_tool[34],163
+toolbar[21][20]=general_tool[47],167
 
 
 ###################################################
 ########## PART 10 Warning Zone #############
 
 #warning(general_26)
-toolbar[21][0]=-,172,, #Warning Icon 1
-toolbar[21][1]=-,173,, #Warning Icon 2
-toolbar[21][2]=-,174,, #Warning Icon 3
-toolbar[21][3]=-,175,, #Warning Icon 4
-toolbar[21][4]=simple_tool[3]
-
-#warning(simple_6)
 toolbar[22][0]=-,172,, #Warning Icon 1
 toolbar[22][1]=-,173,, #Warning Icon 2
 toolbar[22][2]=-,174,, #Warning Icon 3
 toolbar[22][3]=-,175,, #Warning Icon 4
-toolbar[22][4]=simple_tool[6]
+toolbar[22][4]=simple_tool[3]
 
-#warning(general_28)
+#warning(simple_6)
 toolbar[23][0]=-,172,, #Warning Icon 1
 toolbar[23][1]=-,173,, #Warning Icon 2
 toolbar[23][2]=-,174,, #Warning Icon 3
 toolbar[23][3]=-,175,, #Warning Icon 4
-toolbar[23][4]=general_tool[28]
+toolbar[23][4]=simple_tool[6]
+
+#warning(general_28)
+toolbar[24][0]=-,172,, #Warning Icon 1
+toolbar[24][1]=-,173,, #Warning Icon 2
+toolbar[24][2]=-,174,, #Warning Icon 3
+toolbar[24][3]=-,175,, #Warning Icon 4
+toolbar[24][4]=general_tool[28]
 
 ###################################################
 
