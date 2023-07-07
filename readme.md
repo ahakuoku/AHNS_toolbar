@@ -8,16 +8,29 @@
 1. (本体バージョンがOTRPv30以前の場合のみ)(pakset)/menuconf.tabを(pakset)/menuconf/forOTRPv29.tabに置き換える
 
 # 使用条件
-ahakuoku simutrans addon license original version 2.1以上(ASAL O2.1)を適用します。詳しくは https://sites.google.com/site/ahakuoku/home/download/license をご参照ください。
+ahakuoku simutrans addon license version 3.0 (ASAL 3.0)を適用します。
 
-## ASAL O2.1全文
-著作権は作者が保有しています。  
-改造・再配布(改造した場合)は自由にしていただいても結構です。(報告は任意)  
-無改造での再配布は禁止です(当該行為による混乱防止の為)。ただし、NSやセーブデーター配布などpaksetを配布する必要がある場合は除きます。  
-再配布をする場合はどこかに必ず原作者の名を入れてください。  
-改造したものを再配布する際、オリジナルのものを上書きした場合は許可が必要です。ただし、NSやセーブデーター配布などpaksetを配布する必要がある場合は除きます。  
-改造はノンサポート、自己責任です。改造したことによる損害は一切責任を負いません。  
-このアドオンの営利目的での使用はご遠慮ください。
+## ASAL 3.0全文
+利用者は、次の条件を守ることでこのアドオン・ツール等（以下、本作品）を自由にご利用いただけます。
+
+### していいこと
+- ソースがある場合の本作品の改変
+- 改変をした場合の本作品の再配布
+
+### しなければならないこと
+- 本作品を再配布する際の本作品作者名表記
+- 本作品を上書きするアドオンの配布時に、その旨を周知する事（Pakset配布の必要がある場合を除く）
+- 本作品が改造品だった場合は、原作品のライセンスに従う事
+
+### してはいけないこと
+- 本作品の自作宣言
+- 本作品の無改造再配布（Pakset配布の必要がある場合を除く）
+- 本作品の営利目的での利用
+- ソースがない場合の本作品の改変や再配布
+
+### その他細則
+- Pakset配布の必要がある場合とは、NSやセーブデータ配布などのことを指します。
+- 本作品を利用したことによる損害は一切責任を負いません。
 
 # 内容
 AHNS仕様のツールバーpak
@@ -30,14 +43,20 @@ menuconf 2種類(OTRP最新版向けとOTRPv30系以前向け)
 ゲーム内のヘルプをご確認ください。
 
 # 謝辞
-本アドオンの制作にあたり、次のアドオンを参考・改変させていただきました。ありがとうございます。
-- ぼくのかんがえたさいきょうのメニューアイコン(くるり様制作)( https://ux.getuploader.com/Twitrans_Forge/download/49 )
-- Pak256のメニューバー(ふぃすたむ様制作)
-- らくらくクリックくん(Ayura様制作)( https://simutrans.sakura.ne.jp/portal/articles/rakuraku_menuicon_ver2_1 )
-- KPI_menubars(かみやん様制作)( https://simutrans.sakura.ne.jp/portal/articles/kpi_menubars_versions3 )
+本アドオンの制作にあたり、次のアドオンを参考・改変させていただきました。
+- [ぼくのかんがえたさいきょうのメニューアイコン](https://ux.getuploader.com/Twitrans_Forge/download/49)（くるり様）
+- Pak256のメニューバー（ふぃすたむ様　非公開）
+- [らくらくクリックくん](https://simutrans.sakura.ne.jp/portal/articles/rakuraku_menuicon_ver2_1)（Ayura様）
+- [KPI_menubars](https://simutrans.sakura.ne.jp/portal/articles/kpi_menubars_versions3)（かみやん様）
+
+その他、多数の方からアドバイスをいただきました。  
+感謝申し上げます。
 
 # 更新履歴
-現在の最新バージョンは、Version 1.2.0です。
+現在の最新バージョンは、Version 1.2.1です。
+
+## Version 1.2.1(2023/7/7)
+- 箱積みツールを専用のダイアログに分離しました。
 
 ## Version 1.2.0(2022/03/25)
 - インフラ系ツールにて、クリック回数を削減しました。
