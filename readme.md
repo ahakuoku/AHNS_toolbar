@@ -8,7 +8,7 @@
 1. (本体バージョンがOTRPv30以前の場合のみ)(pakset)/menuconf.tabを(pakset)/menuconf/forOTRPv29.tabに置き換える
 
 # 使用条件
-ahakuoku simutrans addon license version 3.1 (ASAL 3.0)を適用します。
+ahakuoku simutrans addon license version 3.1 (ASAL 3.3)を適用します。
 
 ## ASAL 3.1全文
 利用者は、次の条件を守ることでこのアドオン・ツール等（以下、本作品）を自由にご利用いただけます。
