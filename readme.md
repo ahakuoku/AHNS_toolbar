@@ -8,7 +8,7 @@
 1. (本体バージョンがOTRPv30以前の場合のみ)(pakset)/menuconf.tabを(pakset)/menuconf/forOTRPv29.tabに置き換える
 
 # 使用条件
-ahakuoku simutrans addon license version 3.1 (ASAL 3.3)を適用します。
+ahakuoku simutrans addon license version 3.2 (ASAL 3.2)を適用します。
 
 ## ASAL 3.1全文
 利用者は、次の条件を守ることでこのアドオン・ツール等（以下、本作品）を自由にご利用いただけます。
@@ -31,7 +31,7 @@ ahakuoku simutrans addon license version 3.1 (ASAL 3.3)を適用します。
 ### その他細則
 - Pakset配布の必要がある場合とは、NSやセーブデータ配布などのことを指します。
 - 本作品を利用したことによる損害は一切責任を負いません。
-- 本作品の作者は、本規約に違反したユーザーを除き、特定のユーザーに対して差別的な取り扱いを行ってはならないものとします。
+- 本作品の作者は、本規約に違反したユーザーを除き、特定のユーザーに対して不利に差別的な取り扱いを行ってはならないものとします。
 
 # 内容
 AHNS仕様のツールバーpak
@@ -46,7 +46,7 @@ menuconf 2種類(OTRP最新版向けとOTRPv30系以前向け)
 # 謝辞
 本アドオンの制作にあたり、次のアドオンを参考・改変させていただきました。
 - [ぼくのかんがえたさいきょうのメニューアイコン](https://ux.getuploader.com/Twitrans_Forge/download/49)（くるり様）
-- Pak256のメニューバー（ふぃすたむ様　非公開）
+- [Pak256のメニューバー](http://www.pak256.simutrans.info/)（ふぃすたむ様　ソースは特別に提供いただいたものです）
 - [らくらくクリックくん](https://simutrans.sakura.ne.jp/portal/articles/rakuraku_menuicon_ver2_1)（Ayura様）
 - [KPI_menubars](https://simutrans.sakura.ne.jp/portal/articles/kpi_menubars_versions3)（かみやん様）
 
@@ -74,7 +74,7 @@ menuconf 2種類(OTRP最新版向けとOTRPv30系以前向け)
 - KUTAとOTRP v32で追加・変更された一部機能に対応しました。
   - これに伴い、OTRP v30系までの本体で使用するにはmenuconf.tabをmenuconf/forOTRPv29.tabで置き換える必要があります。
 
-## version 1.1.0(2020/02/27)
+## Version 1.1.0(2020/02/27)
 - 複数のショートカットキーを追加しました。
 - マップ編集ツールを公共事業以外でも使用できるようにしました。
 - (シンプル版のみ)マップ閲覧に関する便利機能をタブの中にまとめました。
