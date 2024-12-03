@@ -305,4 +305,8 @@ Image[179]=> menu_buttons_AHNS.3.11 #いろいろツール
 Image[180]=> menu_buttons_AHNS.3.12 #プレイヤー公共切替
 Image[181]=> menu_buttons_AHNS.3.7 #信号撤去ツール
 Image[182]=> menu_buttons_AHNS.3.8 #予約解除ツール
+#1.3.0追加分
+Image[183]=> menu_buttons_AHNS.8.12 #停留所撤去ツール
+Image[184]=> menu_buttons_AHNS.8.13 #待機客除去ツール
+Image[185]=> menu_buttons_AHNS.8.14 #最短経路検索ツール
 --
