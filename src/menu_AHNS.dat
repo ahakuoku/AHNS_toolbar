@@ -309,4 +309,6 @@ Image[182]=> menu_buttons_AHNS.3.8 #予約解除ツール
 Image[183]=> menu_buttons_AHNS.8.12 #停留所撤去ツール
 Image[184]=> menu_buttons_AHNS.8.13 #待機客除去ツール
 Image[185]=> menu_buttons_AHNS.8.14 #最短経路検索ツール
+#1.2.3追加分
+Image[186]=> menu_buttons_AHNS.3.13 #ピペットツール
 --
